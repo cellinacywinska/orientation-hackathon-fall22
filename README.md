@@ -1,1 +1,1 @@
-# Frontend for a AI chatbox project
+# Frontend for an AI chatbox project
