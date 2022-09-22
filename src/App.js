@@ -41,7 +41,7 @@ export default ()=> {
       <Input
         onSendMessage={onSendMessage}
       />
-      <footer className='footer'></footer>
+      <footer className='footer'> © MLH Orientation Hackathon 2022</footer>
     </div>
 
   );
