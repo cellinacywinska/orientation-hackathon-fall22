@@ -1,29 +1,25 @@
 import {Component} from "react";
 import React from "react";
+import image from "./ROBOT.png";
 
-class Messages extends Component {
-  render() {
-    const {messages} = this.props;
-    return (
-      <ul className="Messages-list">
-        {messages.map(m => this.renderMessage(m))}
-      </ul>
-    );
-  }
 
-  renderMessage(message) {
+export default React.forwardRef((props, ref) => {
+
+
+  function renderMessage(message) {
     const {member, text} = message;
-    const {currentMember} = this.props;
+    const {currentMember} = props;
     const messageFromMe = member.id === currentMember.id;
     const className = messageFromMe ?
       "Messages-message currentMember" : "Messages-message";
     const backgroundColor = messageFromMe ? "#FFEC33" : "black";
     return (
       <li className={className}>
-      <span
+      {!messageFromMe ?
+      <img src={image}
         className="avatar"
-        style={{backgroundColor: backgroundColor}}
-      />
+      />  : <span className="avatar" style={{backgroundColor: "black"}}/>}
+
         <div className="Message-content">
           <div className="username">
             {member.username}
@@ -33,6 +29,11 @@ class Messages extends Component {
       </li>
     );
   }
-}
+    const {messages} = props ;
+    return (
+      <ul className="Messages-list" ref={ref}>
+        {messages.map(m => renderMessage(m))}
+      </ul>
+    );
+});
 
-export default Messages;
