@@ -31,7 +31,7 @@ export default () => {
   return (
     <div className="App">
       <div className="App-header">
-        <h1>CS Hero</h1>
+        <h1>Cody</h1>
       </div>
       <Messages
         messages={messages}
