@@ -1,4 +1,4 @@
-import {Component} from "react";
+import { Component } from "react";
 import React from "react";
 
 class Input extends Component {
@@ -7,12 +7,12 @@ class Input extends Component {
   }
 
   onChange(e) {
-    this.setState({text: e.target.value});
+    this.setState({ text: e.target.value });
   }
 
   onSubmit(e) {
     e.preventDefault();
-    this.setState({text: ""});
+    this.setState({ text: "" });
     this.props.onSendMessage(true, "Assistant", this.state.text);
   }
 

@@ -4,6 +4,7 @@ import Messages from "./Messages";
 import Input from "./Input";
 import {useChatScroll} from './chatScroll.js';
 
+
 export default ()=> {
 
   const [messages, setMessages] = useState([{ member: { id: 1 }, text: "I need to learn React..." }]);
@@ -27,7 +28,6 @@ export default ()=> {
     );
   }
 
-
   return (
     <div className="App">
       <div className="App-header">
@@ -41,9 +41,10 @@ export default ()=> {
       <Input
         onSendMessage={onSendMessage}
       />
+    
       <footer className='footer'> © MLH Orientation Hackathon 2022</footer>
     </div>
+    
 
   );
 };
-
