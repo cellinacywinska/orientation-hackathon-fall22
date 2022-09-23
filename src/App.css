@@ -48,11 +48,11 @@
   display: inline-block;
 }
 
-.currentMember > .Message-content {
+.currentMember>.Message-content {
   align-items: flex-end;
 }
 
-.Messages-message > .avatar {
+.Messages-message>.avatar {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -60,14 +60,14 @@
   margin: 0 10px -10px;
 }
 
-.Message-content > .username {
+.Message-content>.username {
   display: block;
   color: gray;
   font-size: 14px;
   padding-bottom: 4px;
 }
 
-.Message-content > .text {
+.Message-content>.text {
   padding: 10px;
   max-width: 400px;
   margin: 0;
@@ -77,8 +77,8 @@
   display: inline-block;
 }
 
-.currentMember > .Message-content .text {
-  background-color: black;
+.currentMember>.Message-content .text {
+  background-color: #006AFF;
   color: white;
 }
 
@@ -94,7 +94,7 @@ input {
   padding: 5px;
   font-size: 16px;
   border-radius: 8px;
-  border: 3px solid #ffec33;
+  border: 3px solid #00B2FF;
   flex-grow: 1;
   top: 10;
 }
@@ -107,7 +107,7 @@ input:focus {
 button {
   padding: 5px 10px;
   font-size: 18px;
-  background-color: #ffec33;
+  background-color: #00B2FF;
   color: white;
   border: none;
   border-radius: 8px;
@@ -123,8 +123,7 @@ footer {
   color: black;
   text-align: center;
   font-size: small;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
-    0 1px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
   display: flex;
   right: 0;
   justify-content: center;
@@ -145,22 +144,7 @@ footer {
   display: none; /* Safari and Chrome */
 }
 
-/* .App-header {
-  font-size: 15rem;
-  text-align: center;
-  height:90vh;
-  line-height: 90vh;
-  color: #fcedd8;
-  background: #d52e3f;
-   font-family: 'Niconne', cursive;
-  font-weight: 700;
-  text-shadow: 5px 5px 0px #eb452b, 
-              10px 10px 0px #efa032, 
-              15px 15px 0px #46b59b, 
-              20px 20px 0px #017e7f, 
-              25px 25px 0px #052939, 
-              30px 30px 0px #c11a2b, 
-              35px 35px 0px #c11a2b, 
-              40px 40px 0px #c11a2b, 
-              45px 45px 0px #c11a2b;
-} */
+.sendButton:hover {
+  cursor: pointer;
+  background-color: #006AFF;
+}

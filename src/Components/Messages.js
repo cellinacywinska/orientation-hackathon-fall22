@@ -1,6 +1,7 @@
 import React from "react";
-import image from "../Assets/ROBOT.png";
-import { ReactTinyLink } from "react-tiny-link";
+import image from "./blue robot.png";
+import { ReactTinyLink } from 'react-tiny-link';
+
 
 export default React.forwardRef((props, ref) => {
   function renderMessage(message) {
@@ -13,12 +14,12 @@ export default React.forwardRef((props, ref) => {
     const backgroundColor = messageFromMe ? "#FFEC33" : "black";
     return (
       <li className={className}>
-        {!messageFromMe ? (
-          <img src={image} className="avatar" />
-        ) : (
-          <span className="avatar" style={{ backgroundColor: "black" }} />
-        )}
-
+        {!messageFromMe ?
+          <img src={image}
+            className="avatar"
+          /> : <span className="avatar" style={{
+            backgroundColor: "#00B2FF"
+          }} />}
         <div className="Message-content">
           <div className="username">{member.username}</div>
           {!messageFromMe ? (
