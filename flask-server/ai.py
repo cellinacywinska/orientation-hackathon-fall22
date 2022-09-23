@@ -50,6 +50,8 @@ def cleanComment(comment):
             continue
         
 
+    # 
+    
     for token in doc:
       
          # remove decided lexical categories to exclode, as well as 500 most common words

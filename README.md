@@ -28,6 +28,8 @@ Cody is an AI chatbot that helps CS students find relevant information on coding
 
 Dependency for the chat features: `npm install react-chat-ui --save `
 
+Dependency for the link preview: `npm install --save react-tiny-link `
+
 **Authors:**
 
 [Celina Cywinska](https://github.com/cellinacywinska)
