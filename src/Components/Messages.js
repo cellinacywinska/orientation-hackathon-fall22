@@ -22,17 +22,15 @@ export default React.forwardRef((props, ref) => {
           }} />}
         <div className="Message-content">
           <div className="username">{member.username}</div>
-          {!messageFromMe ? (
+         {
+            text.option === 'text' ? <div className="text">{text.content}</div> : 
             <ReactTinyLink
-              cardSize="small"
-              showGraphic={true}
-              maxLine={2}
-              minLine={1}
-              url="https://www.freecodecamp.org/news/tag/react/"
-            />
-          ) : (
-            <div className="text">{text}</div>
-          )}
+            cardSize="small"
+            showGraphic={true}
+            maxLine={2}
+            minLine={1}
+            url={text.content}
+          />}
         </div>
       </li>
     );

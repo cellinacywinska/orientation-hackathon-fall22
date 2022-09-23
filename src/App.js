@@ -6,7 +6,7 @@ import { useChatScroll } from "./Components/chatScroll.js";
 
 export default () => {
   const [messages, setMessages] = useState([
-    { member: { id: 1 }, text: "I need to learn React..." },
+    { member: { id: 1 }, text: {option: "text", content: "I need to learn React..." }},
   ]);
   const [member, setMember] = useState({
     id: 1,
@@ -26,11 +26,7 @@ export default () => {
       {
         member: { id: isYou ? 1 : 2, username: isYou ? "You" : username },
         text: text,
-      },
-      {
-        member: { id: 2, username: "Assistant" },
-        text: "To learn React head over to FreeCodeCamp!",
-      },
+      }
     ]);
   }
 
