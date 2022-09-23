@@ -8,8 +8,14 @@ app = Flask(__name__)
 @app.route("/", methods=['POST'])
 def chat():
     if request.method == 'POST':
-        process = cleanComment(request.form.get('nm'))
-        print(process)
+        process = cleanComment(request.form['message'])
+        if process:
+            #Search stackoverflow for related posts.
+            return jsonify(message=process)
+        else:
+            return jsonify(message="Sorry, we couldn't find anything")
+    else:
+        return "error"
 
 if __name__ == '__main__':
     app.run(debug=True)
