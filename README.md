@@ -1,5 +1,9 @@
 # Cody - AI chatbot that helps CS students learn.
 
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://en.wikipedia.org/wiki/JavaScript)
+![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 Cody is an AI chatbot that helps CS students find relevant information on coding related questions. Whenever you find yourself stuck on an issue, simply ask the chatbot for help, and it will provide you with a link to the perfect Stack Overflow answer. 
 
 **Technologies used for the frontend:**
