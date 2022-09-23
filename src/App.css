@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60vh;
+  height: 80vh;
   scroll-behavior: smooth;
   overflow-y: auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,11 +14,11 @@
 }
 
 .App-header {
+  height: 60px;
   overflow: visible;
-  padding: 10px;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   background-color: #002f50;
 }
@@ -93,7 +93,11 @@ form {
   width: 100%;
   justify-content: space-between;
   max-width: 900px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
+}
+
+.Input {
+  padding: 0px 20px;
 }
 
 input {
@@ -117,7 +121,8 @@ button {
   color: white;
   border: none;
   border-radius: 8px;
-  margin-left: 10px;
+  margin-left: 5px;
+
 }
 
 footer {

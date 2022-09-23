@@ -19,12 +19,31 @@ class Input extends Component {
     const res = await axios.post("http://127.0.0.1:5000", { headers: {
       'Content-Type': 'application/json'
   }, message: this.state.text});
-    this.props.onSendMessage(false, "Assistant", { option: "text", content: res.data.message});
-    if(res.data.links){
-      for(const link in res.data.links){
-        this.props.onSendMessage(false, "Assistant", { option: "link", content: link});
+    const message = res.data.message;
+
+    const greetings = ["Hello!","Hey, nice to see you", "Hi there","Hey!","Hi, welcome"];
+
+    for (let i = 0; i < greetings.length; i++) {
+      if(message === greetings[i]) {
+        this.props.onSendMessage(false, "Assistant", { option: "text", content: message});
+        return;
       }
     }
+    if(message === 'Sorry, please rephrase your question') {
+      this.props.onSendMessage(false, "Assistant", { option: "text", content: message});
+      return;
+    }
+   
+
+    console.log(message.split(" ").join("+"));
+
+    this.props.onSendMessage(false, "Assistant", { option: "text", content: "Here is what I found!"});
+
+    const res2 = await axios.get("http://localhost:8000/api/v1/youtube?q="+ (message.split(" ").join("+")));
+    
+    this.props.onSendMessage(false, "Assistant", { option: "link", content: res2.data});
+
+  
   }
 
   render() {
