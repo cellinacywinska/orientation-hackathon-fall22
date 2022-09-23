@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./blue robot.png";
+import image from "../blue robot.png";
 import { ReactTinyLink } from 'react-tiny-link';
 
 
