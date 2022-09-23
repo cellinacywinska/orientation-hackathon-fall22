@@ -10,7 +10,7 @@ def chat():
     if request.method == 'POST':
         process = cleanComment(request.form['message'])
         if process:
-            #Search stackoverflow for related posts.
+            #Search stackoverflow for related posts. F.ex findPost(process)
             return jsonify(message=process)
         else:
             return jsonify(message="Sorry, we couldn't find anything")
