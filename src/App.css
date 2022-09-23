@@ -15,11 +15,10 @@
   text-align: center;
   color: black;
   height: 10%;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
   font-weight: 40;
 }
-
-
 
 .Messages-list {
   padding: 20px 0;
@@ -43,13 +42,11 @@
   /*justify-content: flex-end;*/
   flex-direction: row-reverse;
   text-align: right;
-
 }
 
 .Message-content {
   display: inline-block;
 }
-
 
 .currentMember>.Message-content {
   align-items: flex-end;
@@ -75,10 +72,9 @@
   max-width: 400px;
   margin: 0;
   border-radius: 12px;
-  background-color: #FFEC33;
+  background-color: #ffec33;
   color: black;
   display: inline-block;
-
 }
 
 .currentMember>.Message-content .text {
@@ -141,15 +137,11 @@ footer {
 }
 
 .container {
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-
 .container::-webkit-scrollbar {
-  display: none;
-  /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 .sendButton:hover {
