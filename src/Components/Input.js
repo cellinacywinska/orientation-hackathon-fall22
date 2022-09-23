@@ -39,7 +39,7 @@ class Input extends Component {
 
     this.props.onSendMessage(false, "Assistant", { option: "text", content: "Here is what I found!"});
 
-    const res2 = await axios.get("http://localhost:8000/api/v1/youtube?q="+ (message.split(" ").join("+")));
+    const res2 = await axios.get("https://codybackend.herokuapp.com/api/v1/youtube?q="+ (message.split(" ").join("+")));
     
     this.props.onSendMessage(false, "Assistant", { option: "link", content: res2.data});
 
