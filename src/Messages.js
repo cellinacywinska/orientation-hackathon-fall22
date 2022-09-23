@@ -20,7 +20,8 @@ export default React.forwardRef((props, ref) => {
         {!messageFromMe ?
           <img src={image}
             className="avatar"
-          /> : <span className="avatar" style={{ backgroundColor: "#00B2FF"
+          /> : <span className="avatar" style={{
+            backgroundColor: "#00B2FF"
           }} />}
 
         <div className="Message-content">

@@ -51,11 +51,11 @@
 }
 
 
-.currentMember > .Message-content {
+.currentMember>.Message-content {
   align-items: flex-end;
 }
 
-.Messages-message > .avatar {
+.Messages-message>.avatar {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -63,14 +63,14 @@
   margin: 0 10px -10px;
 }
 
-.Message-content > .username {
+.Message-content>.username {
   display: block;
   color: gray;
   font-size: 14px;
   padding-bottom: 4px;
 }
 
-.Message-content > .text {
+.Message-content>.text {
   padding: 10px;
   max-width: 400px;
   margin: 0;
@@ -78,10 +78,10 @@
   background-color: #FFEC33;
   color: black;
   display: inline-block;
-  
+
 }
 
-.currentMember > .Message-content .text {
+.currentMember>.Message-content .text {
   background-color: #006AFF;
   color: white;
 }
@@ -98,14 +98,14 @@ input {
   padding: 5px;
   font-size: 16px;
   border-radius: 8px;
-  border: 3px solid #00B2FF; 
+  border: 3px solid #00B2FF;
   flex-grow: 1;
-  top:10;
+  top: 10;
 }
 
 input:focus {
-outline-color: transparent;
-outline-style: none;
+  outline-color: transparent;
+  outline-style: none;
 }
 
 button {
@@ -118,7 +118,7 @@ button {
   margin-left: 10px;
 }
 
-footer{
+footer {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -128,12 +128,12 @@ footer{
   text-align: center;
   font-size: small;
   box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
-  display:flex;
+  display: flex;
   right: 0;
-  justify-content:center;
-  align-items:center;
-  padding-top:10px; 
-  padding-bottom:10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -141,15 +141,18 @@ footer{
 }
 
 .container {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-}
-.container::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
+.container::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
 
-.sendButton:hover{
+.sendButton:hover {
   cursor: pointer;
   background-color: #006AFF;
 }
