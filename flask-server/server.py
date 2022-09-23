@@ -22,7 +22,7 @@ def chat():
             response = jsonify(message=process)
             return response
         else:
-            response = jsonify(message="Sorry, we couldn't find anything")
+            response = jsonify(message="Sorry, please rephrase your question")
             return response
     else:
         return "error"
