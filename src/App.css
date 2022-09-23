@@ -15,11 +15,10 @@
   text-align: center;
   color: black;
   height: 10%;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
   font-weight: 40;
 }
-
-
 
 .Messages-list {
   padding: 20px 0;
@@ -43,13 +42,11 @@
   /*justify-content: flex-end;*/
   flex-direction: row-reverse;
   text-align: right;
-
 }
 
 .Message-content {
   display: inline-block;
 }
-
 
 .currentMember > .Message-content {
   align-items: flex-end;
@@ -75,10 +72,9 @@
   max-width: 400px;
   margin: 0;
   border-radius: 12px;
-  background-color: #FFEC33;
+  background-color: #ffec33;
   color: black;
   display: inline-block;
-  
 }
 
 .currentMember > .Message-content .text {
@@ -98,27 +94,27 @@ input {
   padding: 5px;
   font-size: 16px;
   border-radius: 8px;
-  border: 3px solid #FFEC33; 
+  border: 3px solid #ffec33;
   flex-grow: 1;
-  top:10;
+  top: 10;
 }
 
 input:focus {
-outline-color: transparent;
-outline-style: none;
+  outline-color: transparent;
+  outline-style: none;
 }
 
 button {
   padding: 5px 10px;
   font-size: 18px;
-  background-color: #FFEC33;
+  background-color: #ffec33;
   color: white;
   border: none;
   border-radius: 8px;
   margin-left: 10px;
 }
 
-footer{
+footer {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -127,13 +123,14 @@ footer{
   color: black;
   text-align: center;
   font-size: small;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
-  display:flex;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
+  display: flex;
   right: 0;
-  justify-content:center;
-  align-items:center;
-  padding-top:10px; 
-  padding-bottom:10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -141,11 +138,11 @@ footer{
 }
 
 .container {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-.container::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 /* .App-header {
@@ -167,4 +164,3 @@ footer{
               40px 40px 0px #c11a2b, 
               45px 45px 0px #c11a2b;
 } */
-

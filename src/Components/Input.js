@@ -3,8 +3,8 @@ import React from "react";
 
 class Input extends Component {
   state = {
-    text: ""
-};
+    text: "",
+  };
 
   onChange(e) {
     this.setState({ text: e.target.value });
@@ -19,13 +19,14 @@ class Input extends Component {
   render() {
     return (
       <div className="Input">
-        <form onSubmit={e => this.onSubmit(e)}>
+        <form onSubmit={(e) => this.onSubmit(e)} method="POST">
           <input
-            onChange={e => this.onChange(e)}
+            onChange={(e) => this.onChange(e)}
             value={this.state.text}
             type="text"
             placeholder="Enter your message and press ENTER"
-            autofocus="true"
+            autoFocus={true}
+            name="nm"
           />
           <button>Send</button>
         </form>
