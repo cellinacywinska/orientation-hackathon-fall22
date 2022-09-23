@@ -1,6 +1,6 @@
 import { Component } from "react";
 import React from "react";
-import image from "./ROBOT.png";
+import image from "./blue robot.png";
 import { ReactTinyLink } from 'react-tiny-link';
 
 
@@ -20,7 +20,8 @@ export default React.forwardRef((props, ref) => {
         {!messageFromMe ?
           <img src={image}
             className="avatar"
-          /> : <span className="avatar" style={{ backgroundColor: "black" }} />}
+          /> : <span className="avatar" style={{ backgroundColor: "#00B2FF"
+          }} />}
 
         <div className="Message-content">
           <div className="username">
