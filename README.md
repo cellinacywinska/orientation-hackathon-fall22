@@ -1,5 +1,7 @@
 # Cody - AI chatbot that helps CS students learn.
 
+Made for MLH Orientation Hackathon Fall 2022.
+
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://en.wikipedia.org/wiki/JavaScript)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -37,3 +39,7 @@ Dependency for the link preview: `npm install --save react-tiny-link `
 [Gabby Niamat](https://github.com/pidgey0403)
 
 [Jorge Sanchez Diaz](https://github.com/S4ND1X)
+
+**Full post:**
+
+See the devpost [here](https://devpost.com/software/cody-3sftkd?ref_content=user-portfolio&ref_feature=in_progress).
