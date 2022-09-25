@@ -40,27 +40,28 @@ app.get("/api/v1/youtube", async (req, res) => {
 });
 
 // Google search link receiving an array of keywords
-app.get("/api/v1/google", async (req, res) => {
-    const { q } = req.query;
-    if (!q) {
-        res.status(400).json({ message: "Please provide a search query" });
-    }
-    const keywords = q.split("+").join(" ");
-    search.json(
-        {
-            api_key: process.env.SERAPI_KEY,
-            q: keywords,
-            num: 5,
-        },
-        (data) => {
-            const linksArray = [];
-            data.organic_results.forEach((result) => {
-                linksArray.push(result.link);
-            });
-            res.json(linksArray).status(200);
-        }
-    );    
-});
+// TODO: Make this endpoint work faster to handle crashes
+// app.get("/api/v1/google", async (req, res) => {
+//     const { q } = req.query;
+//     if (!q) {
+//         res.status(400).json({ message: "Please provide a search query" });
+//     }
+//     const keywords = q.split("+").join(" ");
+//     search.json(
+//         {
+//             api_key: process.env.SERAPI_KEY,
+//             q: keywords,
+//             num: 5,
+//         },
+//         (data) => {
+//             const linksArray = [];
+//             data.organic_results.forEach((result) => {
+//                 linksArray.push(result.link);
+//             });
+//             res.json(linksArray).status(200);
+//         }
+//     );
+// });
 
 // wildcard for all other routes
 app.get("*", (req, res) => {
