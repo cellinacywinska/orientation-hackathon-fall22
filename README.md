@@ -10,7 +10,11 @@ Made for MLH Orientation Hackathon Fall 2022.
 
 Cody is an AI chatbot that helps CS students find relevant information on coding related questions. Whenever you find yourself stuck on an issue, simply ask the chatbot for help, and it will provide you with a link to the perfect Stack Overflow answer. 
 
+**How to use**
+
 [Try Cody out!](https://codyai.netlify.app/)
+
+In order to have the link previews work, please request access to the server [here](https://cors-anywhere.herokuapp.com/corsdemo).
 
 **Technologies used for the frontend:**
 
