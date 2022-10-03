@@ -1,6 +1,4 @@
-# Cody - AI chatbot that helps CS students learn.
-
-Made for MLH Orientation Hackathon Fall 2022.
+# Cody 🤖 - An AI Chatbot Designed to Help Students Learn
 
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://en.wikipedia.org/wiki/JavaScript)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -8,44 +6,38 @@ Made for MLH Orientation Hackathon Fall 2022.
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Cody is an AI chatbot that helps CS students find relevant information on coding related questions. Whenever you find yourself stuck on an issue, simply ask the chatbot for help, and it will provide you with a link to the perfect Stack Overflow answer. 
+🥇 Winner of the [MLH Orientation Hackathon Software Engineering category (Fall 2022)](https://fellowship-orientation-22-fal.devpost.com/). 
 
-**How to use**
+Cody is an AI chatbot that helps CS students find relevant information on coding related questions. Whenever you find yourself stuck on an issue, simply ask the chatbot for help, and it will provide you with a link to the perfect Stack Overflow answer or YouTube tutorial. 
 
-[Try Cody out!](https://codyai.netlify.app/)
+[Try Cody out here](https://codyai.netlify.app/)
 
-In order to have the link previews work, please request access to the server [here](https://cors-anywhere.herokuapp.com/corsdemo).
+Note: In order to have embedded link previews work, please [request access](https://cors-anywhere.herokuapp.com/corsdemo) to our server so you can get the most out of our live app!
 
-**Technologies used for the frontend:**
+Want more info. on how our experience building Cody was? Checkout our [Devpost](https://devpost.com/software/cody-3sftkd?ref_content=user-portfolio&ref_feature=in_progress).
 
-🛠️ React
 
-🛠️ JavaScript
+## 💻 Technologies Used
 
-🛠️ HTML5
+### Frontend
 
-🛠️ CSS
+🛠️ React.js, JavaScript, HTML5, CSS
 
-**Technologies used for the backend:**
+### Backend
 
-🛠️ Python
+🛠️ Python, AI library - sPacy, Flask, Heroku
 
-🛠️ Python AI library - sPacy
 
-**Dependencies**
+## 🐛 Dependencies 
 
 Dependency for the chat features: `npm install react-chat-ui --save `
 
 Dependency for the link preview: `npm install --save react-tiny-link `
 
-**Authors:**
+## The Team 
 
-[Celina Cywinska](https://github.com/cellinacywinska)
+[Celina Cywinska](https://github.com/cellinacywinska) - UI/UX design and implementation done with React.js, HTML, and CSS.
 
-[Gabby Niamat](https://github.com/pidgey0403)
+[Gabby Niamat](https://github.com/pidgey0403) - NLP AI module implementation and server setup done in Python using spaCy and Flask.
 
-[Jorge Sanchez Diaz](https://github.com/S4ND1X)
-
-**Full post:**
-
-See the devpost [here](https://devpost.com/software/cody-3sftkd?ref_content=user-portfolio&ref_feature=in_progress).
+[Jorge Sanchez Diaz](https://github.com/S4ND1X) - Webscraping and hosting done with JavaScript and Heroku.
